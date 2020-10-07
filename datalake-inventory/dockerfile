@@ -1,0 +1,13 @@
+FROM python:latest
+ 
+RUN apt-get update && apt-get install -y libpq-dev gcc
+RUN pip3 install psycopg2~=2.6
+RUN apt-get autoremove -y gcc
+WORKDIR /usr/src/app
+RUN python -m pip install \
+                    boto3 \
+                    psycopg2\
+                    awswrangler
+
+COPY ["main.py", "config.py", "ECS_handler.py", "postgresDB.py", "splitPaqruetFile.py", "LogError.py", "./"]
+CMD [ "python", "main.py" ]

@@ -1,0 +1,52 @@
+#------------------------------------------------------------
+# Data Lake Injestion
+#-----------------------
+Language Used: Python
+Developer: Prashan Bawari
+
+Objective:
+To injest Raw files into S3 'curated' bucket according to DMS-Timestamp.
+
+Project Description:
+1) Dms task will be adding '.parquet' files to S3 Raw Bucket.
+2) SQS tied to Raw bucket will invoke this container and will add files into curated bucket at time curation folder structure.
+3) Update Postgres SQL tables with file info.
+4) Also update DynamoDB with record details of 'Insert and delete'
+
+Class Files:
+1) main.py
+    - Entry of 'Injestion' functionality
+2) ECS_handler.py
+    - Read SQS and get all the information e.g bucket, s3key etc
+3) splitPaqruetFile.py
+    - To read and split the parquet files according to DMS_timestamp
+4) postgresDB.py
+    - To connect AWS postgres DB and update new fields.
+5) LogError.py   #Still need to work on this-----
+    - To log errors.
+6) dockerfile.txt
+    - To create docker image.
+
+
+AWS Services used:
+1) S3  -->  (raw: sterling-datalake-raw-data-int-us-east-1), (curated: sterling-datalake-curated-data-int-us-east-1)
+2) SQS, DLQ -->  (SQS: 	inventory-raw-incoming) (DLQ: 	inventory-raw-incoming-dlq)
+3) ECR, ECS -->  (ECR: datalake-inventory-datalower) (datalake-inventory)
+4) DynamoDB -->   (raw: raw-reconcile-dataint) (curated: curated-reconcile-dataint)
+5) Postgres RDS -->  (raw: raw_inventory_metadata) (curated: curated_inventory_metadata)
+
+
+Deployment:
+Deployed on AWS ECS (Fragate)
+
+
+
+
+
+
+
+
+
+
+
+
