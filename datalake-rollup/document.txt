@@ -1,0 +1,50 @@
+#------------------------------------------------------------
+# Data Lake Rollup/Rolldown of (parquet, JSON, Csv)
+#-----------------------
+Language Used: Python
+Developer: Prashan Bawari
+
+Objective:
+To rollup/rolldown curated parquet files in s3 bucket.
+
+Project Description:
+1) Rollup/rolldown files at hour, day and month level
+2) Hour buffer of 30 mins
+3) Day buffer at 3:00 am of next day
+4) Month rollup at 2nd saturday of every month.
+
+Class Files:
+1) main.py
+    - Entry of 'Injestion' functionality
+2) ECS_handler.py
+    - Read SQS and get all the information e.g bucket, s3key etc
+3) consolidateFiles.py
+    - rollup or rolldown files of particular partition.
+4) postgresDB.py
+    - To connect AWS postgres DB and update new fields.
+5) LogError.py   #Still need to work on this-----
+    - To log errors.
+6) dockerfile.txt
+    - To create docker image.
+
+
+AWS Services used:
+1) S3  -->  (curated: sterling-datalake-curated-data-int-us-east-1)
+2) ECR, ECS --> (ECR: datalake-compact-parquet-datalower) (datalake-inventory)
+3) Postgres RDS --> (curated: curated_consolidated_metadata)
+
+
+Deployment:
+Deployed on AWS ECS (Fragate)
+
+
+
+
+
+
+
+
+
+
+
+
