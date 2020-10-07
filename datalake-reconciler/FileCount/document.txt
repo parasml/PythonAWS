@@ -1,0 +1,49 @@
+#------------------------------------------------------------
+# Data Lake - FileCount (Comapring num of files )
+#-----------------------
+Language Used: Python
+Developer: Prashan Bawari
+
+Objective:
+To compare s3 Raw bucket files and postgres table entries.
+
+Project Description:
+1) To compare s3 Raw bucket files and postgres table entries.
+2) Hour buffer of 15 mins
+
+
+Class Files:
+1) main.py
+    - Entry of 'Injestion' functionality
+2) fileCount.py
+    - To count the files of S3 raw bucket of particular hour
+3) getRawBucketFiles.py
+    - get raw s3 buket file
+4) postgresDB.py
+    - To connect AWS postgres DB raw table
+5) LogError.py   #Still need to work on this-----
+    - To log errors.
+6) dockerfile.txt
+    - To create docker image.
+
+
+AWS Services used:
+1) S3  -->  (raw: sterling-datalake-raw-data-int-us-east-1)
+3) ECR, ECS -->  (ECR: datalake-reconcile-filecount) (ECS: datalake-reconcile-filecount-dataint)
+5) Postgres RDS -->  (raw: raw_inventory_metadata)
+
+
+Deployment:
+Deployed on AWS ECS (Fragate)
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,230 @@
+Description: >
+  Provides data reconcile recordcount hosted on ECS Fargate with step function and scheduled task.
+Parameters:
+  ClusterARN:
+    Type: String
+    Description: Cluster arn
+    Default: "arn:aws:ecs:us-east-1:909045093730:cluster/applications"
+  ImageTag:
+    Type: String
+    Description: The tag for the image being asked to run
+    Default: "latest"
+  VpcId:
+    Type: AWS::SSM::Parameter::Value<String>
+    Description: VPC ID
+    Default: "/network/vpc/1/id"
+  InternalSubnetIds:
+    Type: AWS::SSM::Parameter::Value<List<String>>
+    Description: Internal Subnet IDs
+    Default: "/network/vpc/1/subnet/internal/ids"
+  IsolatedSubnetIds:
+    Type: AWS::SSM::Parameter::Value<List<String>>
+    Description: Internal Subnet IDs
+    Default: "/network/vpc/1/subnet/isolated/ids"
+  ApplicationName:
+    Type: String
+    Description: The application Name
+    Default: datalake-reconcile-recordcount
+  Environment:
+    Type: String
+    Description: The environment name
+    AllowedValues:
+      - dataint
+Resources:
+  TaskSecurityGroup:
+    Type: "AWS::EC2::SecurityGroup"
+    Properties:
+      GroupDescription: Traffic between ALB and Containers
+      VpcId: !Ref VpcId
+  TaskDefinition:
+    Type: AWS::ECS::TaskDefinition
+    Properties:
+      Family: !Sub "${ApplicationName}-${Environment}"
+      Cpu: 512
+      Memory: 1024
+      NetworkMode: awsvpc
+      RequiresCompatibilities:
+        - FARGATE
+      ExecutionRoleArn: !GetAtt DatalakeReconcileRecordCountRole.Arn
+      TaskRoleArn: !GetAtt DatalakeReconcileRecordCountRole.Arn
+      ContainerDefinitions:
+        - Environment:
+            - Name: PG_DATABASE_HOST
+              Value: !ImportValue "inventory-rds-cluster-endpoint"
+            - Name: KMS_KEY_ARN
+              Value: !ImportValue "kms-shared-key-arn"
+          Name: datalake-reconcile-recordcount
+          Image: !Sub "${AWS::AccountId}.dkr.ecr.${AWS::Region}.amazonaws.com/${ApplicationName}:${ImageTag}"
+          Essential: true
+          LogConfiguration:
+            LogDriver: awslogs
+            Options:
+              awslogs-group: !Ref AWS::StackName
+              awslogs-region: !Ref AWS::Region
+              awslogs-stream-prefix: "datalake-reconcile-recordcount"
+          Secrets:
+            - Name: PG_DATABASE_USER
+              ValueFrom: !ImportValue inventory-rds-user-secret-username
+            - Name: PG_DATABASE_PASSWORD
+              ValueFrom: !ImportValue inventory-rds-user-secret-password
+  LogGroup:
+    Type: AWS::Logs::LogGroup
+    Properties:
+      LogGroupName: !Ref AWS::StackName
+      RetentionInDays: 30
+  DatalakeReconcileRecordCountRole:
+    Type: AWS::IAM::Role
+    Properties:
+      Path: /
+      AssumeRolePolicyDocument:
+        Version: 2012-10-17
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service:
+                - ecs-tasks.amazonaws.com
+                - ecs.amazonaws.com
+                - ec2.amazonaws.com
+                - ssm.amazonaws.com
+            Action: "sts:AssumeRole"
+      ManagedPolicyArns:
+        - arn:aws:iam::aws:policy/service-role/AmazonEC2ContainerServiceRole
+        - arn:aws:iam::aws:policy/service-role/AmazonECSTaskExecutionRolePolicy
+        - "arn:aws:iam::aws:policy/CloudWatchReadOnlyAccess"
+        - "arn:aws:iam::aws:policy/AmazonS3FullAccess"
+        - "arn:aws:iam::aws:policy/AmazonDynamoDBFullAccess"
+        - "arn:aws:iam::aws:policy/ResourceGroupsandTagEditorReadOnlyAccess"
+        - "arn:aws:iam::aws:policy/AmazonSQSFullAccess"
+      Policies:
+        - PolicyName: db_secrets
+          PolicyDocument:
+            Version: "2012-10-17"
+            Statement:
+              - Effect: Allow
+                Action:
+                  - "secretsmanager:GetSecretValue"
+                Resource:
+                  - !ImportValue inventory-rds-user-secret-username
+                  - !ImportValue inventory-rds-user-secret-password
+              - Effect: Allow
+                Action:
+                  - "kms:Decrypt"
+                  - "kms:Encrypt"
+                  - "kms:ReEncryptTo"
+                  - "kms:GenerateDataKey"
+                  - "kms:DescribeKey"
+                  - "kms:ReEncryptFrom"
+                Resource:
+                  - !ImportValue "kms-shared-key-arn"
+  StateMachine:
+    Type: "AWS::StepFunctions::StateMachine"
+    Properties:
+      StateMachineName: "${ApplicationName}-${Environment}"
+      DefinitionString: !Sub
+        - |
+          {
+            "Version": "1.0",
+            "Comment": "Run ECS/Fargate tasks",
+            "TimeoutSeconds": ${Timeout},
+            "StartAt": "RunTask",
+            "States": {
+              "RunTask": {
+                "Type": "Task",
+                "Resource": "arn:aws:states:::ecs:runTask.sync",
+                "Parameters": {
+                  "LaunchType": "FARGATE",
+                  "Cluster": "${Cluster}",
+                  "TaskDefinition": "${TaskDefinition}",
+                  "NetworkConfiguration": {
+                    "AwsvpcConfiguration": {
+                      "Subnets": ["${SubnetA}", "${SubnetB}"],
+                      "AssignPublicIp": "${AssignPublicIp}",
+                      "SecurityGroups": ${SecurityGroups}
+                    }
+                  }
+                },
+                "Retry": [
+                  {
+                    "ErrorEquals": [
+                      "States.TaskFailed"
+                    ],
+                    "IntervalSeconds": 10,
+                    "MaxAttempts": 3,
+                    "BackoffRate": 2
+                  }
+                ],
+                "End": true
+              }
+            }
+          }
+        - Cluster: !Ref ClusterARN
+          TaskDefinition: !Ref TaskDefinition
+          SubnetA: !Select [0, !Ref IsolatedSubnetIds]
+          SubnetB: !Select [1, !Ref IsolatedSubnetIds]
+          AssignPublicIp: "DISABLED"
+          SecurityGroups: !Sub '["${TaskSecurityGroup.GroupId}"]'
+          Timeout: 600 # 10 minutes
+      RoleArn: !GetAtt "StateMachineRole.Arn"
+  StateMachineRole:
+    Type: "AWS::IAM::Role"
+    Properties:
+      AssumeRolePolicyDocument:
+        Version: "2012-10-17"
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service: "states.amazonaws.com"
+            Action: "sts:AssumeRole"
+      Policies:
+        - PolicyName: StateMachine
+          PolicyDocument:
+            Statement:
+              - Effect: Allow
+                Action: "iam:PassRole"
+                Resource:
+                  - !GetAtt DatalakeReconcileRecordCountRole.Arn                 
+              - Effect: Allow
+                Action: "ecs:RunTask"
+                Resource: !Ref TaskDefinition
+                Condition:
+                  ArnEquals:
+                    "ecs:cluster": !Ref ClusterARN
+              - Effect: Allow
+                Action:
+                  - "ecs:StopTask"
+                  - "ecs:DescribeTasks"
+                Resource: "*"
+                Condition:
+                  ArnEquals:
+                    "ecs:cluster": !Ref ClusterARN
+              - Effect: Allow
+                Action:
+                  - "events:PutTargets"
+                  - "events:PutRule"
+                  - "events:DescribeRule"
+                Resource: !Sub "arn:${AWS::Partition}:events:${AWS::Region}:${AWS::AccountId}:rule/StepFunctionsGetEventsForECSTaskRule"
+  Rule:
+    Type: "AWS::Events::Rule"
+    Properties:
+      ScheduleExpression: "rate(1 hour)"
+      State: ENABLED
+      Targets:
+        - Arn: !Ref StateMachine
+          Id: statemachine
+          RoleArn: !GetAtt "RuleRole.Arn"
+  RuleRole:
+    Type: "AWS::IAM::Role"
+    Properties:
+      AssumeRolePolicyDocument:
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service: "events.amazonaws.com"
+            Action: "sts:AssumeRole"
+      Policies:
+        - PolicyName: EventRulePolicy
+          PolicyDocument:
+            Statement:
+              - Effect: Allow
+                Action: "states:StartExecution"
+                Resource: !Ref StateMachine  
