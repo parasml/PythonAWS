@@ -1,0 +1,2440 @@
+{
+	"rules": [
+		{
+			"rule-type": "selection",
+			"rule-id": "1",
+			"rule-name": "1",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "absolve_invitationreference"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "2",
+			"rule-name": "2",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "absolve_orderreference"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "3",
+			"rule-name": "3",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "accountchargedetails"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "4",
+			"rule-name": "4",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "accountcharges"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "5",
+			"rule-name": "5",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "accountcommissioninfo"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "6",
+			"rule-name": "6",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "accountjobpositionaccess"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "7",
+			"rule-name": "7",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "accountprofileaccess"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "8",
+			"rule-name": "8",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "accounts"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "9",
+			"rule-name": "9",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "accountsexcludedemaillist"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "10",
+			"rule-name": "10",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "accountstafflinking"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "11",
+			"rule-name": "11",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "crmaccounts"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "12",
+			"rule-name": "12",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "crmbusinesscontact"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "13",
+			"rule-name": "13",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "accountviewaccess"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "14",
+			"rule-name": "14",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "accountviewmembers"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "15",
+			"rule-name": "15",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "accountviews"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "16",
+			"rule-name": "16",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "adjudicationassignments"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "17",
+			"rule-name": "17",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "adjudicationdisposition"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "18",
+			"rule-name": "18",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "adjudicationdispositionhistory"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "19",
+			"rule-name": "19",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "adjudications"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "20",
+			"rule-name": "20",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "adjudicationsets"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "21",
+			"rule-name": "21",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "bgorderadjudications"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "22",
+			"rule-name": "22",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "dispositioncodes"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "23",
+			"rule-name": "23",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "searchadjudications"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "24",
+			"rule-name": "24",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "applicantaccounts"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "25",
+			"rule-name": "25",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "applicantassessments"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "26",
+			"rule-name": "26",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "applicantattachments"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "27",
+			"rule-name": "27",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "applicantcomments"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "28",
+			"rule-name": "28",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "applicantcontact"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "29",
+			"rule-name": "29",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "applicanteeo"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "30",
+			"rule-name": "30",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "applicantinfo"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "31",
+			"rule-name": "31",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "aspnet_membership"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "32",
+			"rule-name": "32",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "aspnet_users"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "33",
+			"rule-name": "33",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "bgconsent"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "34",
+			"rule-name": "34",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "esign"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "35",
+			"rule-name": "35",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "bginvitationcode"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "36",
+			"rule-name": "36",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "bgorderinvite"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "37",
+			"rule-name": "37",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "bgeinviteattachments"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "38",
+			"rule-name": "38",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "bgeinvite"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "39",
+			"rule-name": "39",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "bginviteassignee"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "40",
+			"rule-name": "40",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "bgorders"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "41",
+			"rule-name": "41",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "bgorderassignee"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "42",
+			"rule-name": "42",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "bgorderdelivery"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "43",
+			"rule-name": "43",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "bgorders_mappinglegacy"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "44",
+			"rule-name": "44",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "existingorderlookup"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "45",
+			"rule-name": "45",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "bulkorder"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "46",
+			"rule-name": "46",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "bulkorderqueue"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "47",
+			"rule-name": "47",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "crmactivity"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "48",
+			"rule-name": "48",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "crmattachment"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "49",
+			"rule-name": "49",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "accountsettings"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "50",
+			"rule-name": "50",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "customadverseactionwording"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "51",
+			"rule-name": "51",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "customeralwayspayjurisfees"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "52",
+			"rule-name": "52",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "customerjurisdictionrules"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "53",
+			"rule-name": "53",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "customerpricing"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "54",
+			"rule-name": "54",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "customersubtypedefaults"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "55",
+			"rule-name": "55",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "customizedproducts"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "56",
+			"rule-name": "56",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "lookupcodes"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "57",
+			"rule-name": "57",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "productactivation"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "58",
+			"rule-name": "58",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "sitesettings"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "59",
+			"rule-name": "59",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "wfdalternateconsent"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "60",
+			"rule-name": "60",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "customerfieldchoices"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "61",
+			"rule-name": "61",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "customerfielddata"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "62",
+			"rule-name": "62",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "customerfielddatastring"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "63",
+			"rule-name": "63",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "customerfields"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "64",
+			"rule-name": "64",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "entitytypes"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "65",
+			"rule-name": "65",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "fielddatatypes"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "66",
+			"rule-name": "66",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "fieldtypes"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "67",
+			"rule-name": "67",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "clientsupport"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "68",
+			"rule-name": "68",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "confidentialcustomers"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "69",
+			"rule-name": "69",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "custombannersettings"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "70",
+			"rule-name": "70",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "customerbranding"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "71",
+			"rule-name": "71",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "customergroups"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "72",
+			"rule-name": "72",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "customerpods"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "73",
+			"rule-name": "73",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "customers"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "74",
+			"rule-name": "74",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "customers_mappinglegacy"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "75",
+			"rule-name": "75",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "tradingpartnercustomers"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "76",
+			"rule-name": "76",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "documents"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "77",
+			"rule-name": "77",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "customeremailaddressbooks"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "78",
+			"rule-name": "78",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "customeremailaddresses"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "79",
+			"rule-name": "79",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "customeremaildistributionlistaddresses"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "80",
+			"rule-name": "80",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "customeremaildistributionlists"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "81",
+			"rule-name": "81",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "employeecontactlog"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "82",
+			"rule-name": "82",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "employeeexportqueue"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "83",
+			"rule-name": "83",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "employeeinfo"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "84",
+			"rule-name": "84",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "employeejobpositionhistory"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "85",
+			"rule-name": "85",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "empi9documents"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "86",
+			"rule-name": "86",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "empi9info"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "87",
+			"rule-name": "87",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "empi9statecodes"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "88",
+			"rule-name": "88",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "empi9transactions"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "89",
+			"rule-name": "89",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "employermasteractivity"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "90",
+			"rule-name": "90",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "employermastercontacts"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "91",
+			"rule-name": "91",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "employermasterdetail"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "92",
+			"rule-name": "92",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "agencymanagement"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "93",
+			"rule-name": "93",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "agencymaster"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "94",
+			"rule-name": "94",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "customeragencymapping"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "95",
+			"rule-name": "95",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "jobboardposting"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "96",
+			"rule-name": "96",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "jobboards"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "97",
+			"rule-name": "97",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "jobreqapplicantanswerscustom"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "98",
+			"rule-name": "98",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "jobreqapplicants"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "99",
+			"rule-name": "99",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "jobreqexpenses"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "100",
+			"rule-name": "100",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "jobreqowners"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "101",
+			"rule-name": "101",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "jobreqs"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "102",
+			"rule-name": "102",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "jobreqstatuslog"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "103",
+			"rule-name": "103",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "juris_closedcourts"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "104",
+			"rule-name": "104",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "searchstats"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "105",
+			"rule-name": "105",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "monitoringbatches"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "106",
+			"rule-name": "106",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "monitoringbatchindividuals"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "107",
+			"rule-name": "107",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "monitoringbatchrunorders"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "108",
+			"rule-name": "108",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "monitoringbatchrunresults"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "109",
+			"rule-name": "109",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "monitoringbatchruns"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "110",
+			"rule-name": "110",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "monitoringindividuals"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "111",
+			"rule-name": "111",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "monitoringnotificationsettings"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "112",
+			"rule-name": "112",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "monitoringproducts"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "113",
+			"rule-name": "113",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "monitoringprograms"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "114",
+			"rule-name": "114",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "monitoringsettings"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "115",
+			"rule-name": "115",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "monitoringsubscriptionpricing"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "116",
+			"rule-name": "116",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "posthirebatchemployeeprofiles"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "117",
+			"rule-name": "117",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "posthirebatchruns"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "118",
+			"rule-name": "118",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "posthireemployeeprofiles"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "119",
+			"rule-name": "119",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "posthirefailedorders"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "120",
+			"rule-name": "120",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "posthireorder"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "121",
+			"rule-name": "121",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "posthireprofieitemsifnmonitoring"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "122",
+			"rule-name": "122",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "posthireprofileactivitylogs"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "123",
+			"rule-name": "123",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "posthireprofileitems"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "124",
+			"rule-name": "124",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "posthireprofiles"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "125",
+			"rule-name": "125",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "personinfo"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "126",
+			"rule-name": "126",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "postaladdresses"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "127",
+			"rule-name": "127",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "juris"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "128",
+			"rule-name": "128",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "jurisfees"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "129",
+			"rule-name": "129",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "jurisstates"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "130",
+			"rule-name": "130",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "juriszipcodes"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "131",
+			"rule-name": "131",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "juriszipcodes_multicounty"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "132",
+			"rule-name": "132",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "productbillinginfo"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "133",
+			"rule-name": "133",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "productbillinginfo_new"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "134",
+			"rule-name": "134",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "producthistory"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "135",
+			"rule-name": "135",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "productjurisinfo"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "136",
+			"rule-name": "136",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "productpartnumbermapping"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "137",
+			"rule-name": "137",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "productsgeneric"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "138",
+			"rule-name": "138",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "searchreqta"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "139",
+			"rule-name": "139",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "subtypes"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "140",
+			"rule-name": "140",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "tempjurissla"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "141",
+			"rule-name": "141",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "products"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "142",
+			"rule-name": "142",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "bgprofileassoc"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "143",
+			"rule-name": "143",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "bgprofileitem"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "144",
+			"rule-name": "144",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "bgprofiles"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "145",
+			"rule-name": "145",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "jobpositionbudgetedtotals"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "146",
+			"rule-name": "146",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "jobpositionowners"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "147",
+			"rule-name": "147",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "jobpositionrequestapprovers"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "148",
+			"rule-name": "148",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "jobpositionrequestnotifications"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "149",
+			"rule-name": "149",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "jobpositionrequestresponses"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "150",
+			"rule-name": "150",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "jobpositionrequests"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "151",
+			"rule-name": "151",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "jobpositions"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "152",
+			"rule-name": "152",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "schoolcontacts"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "153",
+			"rule-name": "153",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "schoolmasteractivity"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "154",
+			"rule-name": "154",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "schoolmasterdetail"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "155",
+			"rule-name": "155",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "searchreq"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "156",
+			"rule-name": "156",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "searchreqdraft"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "157",
+			"rule-name": "157",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "arrestdirectvalidatorlinking"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "158",
+			"rule-name": "158",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "crsdvalidatorlinking"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "159",
+			"rule-name": "159",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "facisvalidatorlinking"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "160",
+			"rule-name": "160",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "missinginformation"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "161",
+			"rule-name": "161",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "msmjvalidatorlinking"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "162",
+			"rule-name": "162",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "reasondisqualification"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "163",
+			"rule-name": "163",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "searchreqfaxrequest"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "164",
+			"rule-name": "164",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "searchreqactivity"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "165",
+			"rule-name": "165",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "searchreqimpalastores"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "166",
+			"rule-name": "166",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "searchreqtrace"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "167",
+			"rule-name": "167",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "searchreqtraceitems"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "168",
+			"rule-name": "168",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "ssnlookup_archive"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "169",
+			"rule-name": "169",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "staff"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "170",
+			"rule-name": "170",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "absodepartments"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "171",
+			"rule-name": "171",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "configurationsettings"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "172",
+			"rule-name": "172",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "crmticket"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "173",
+			"rule-name": "173",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "drugscreenresulttypes"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "174",
+			"rule-name": "174",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "syslookup"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "175",
+			"rule-name": "175",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "tradingpartners"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "176",
+			"rule-name": "176",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "vendorcodes"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "177",
+			"rule-name": "177",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "useractivity"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "178",
+			"rule-name": "178",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "userrecentorders"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "179",
+			"rule-name": "179",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "confidentialcustomers_users"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "180",
+			"rule-name": "180",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "serviceresults"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "181",
+			"rule-name": "181",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "useraccess"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "182",
+			"rule-name": "182",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "userpolicies"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "183",
+			"rule-name": "183",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "users"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "184",
+			"rule-name": "184",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "wfdpaymentlog"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "185",
+			"rule-name": "185",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "dynamicquestion"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "186",
+			"rule-name": "186",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "dynamicquestionset"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "187",
+			"rule-name": "187",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "dynamicquestionset_lov"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "188",
+			"rule-name": "188",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "webadminquestionresponses"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "189",
+			"rule-name": "189",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "wfddocument"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "190",
+			"rule-name": "190",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "wfddocumentset"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "191",
+			"rule-name": "191",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "wfddocumentset_lov"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "192",
+			"rule-name": "192",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "wfdenduserinfo"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "193",
+			"rule-name": "193",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "wfdworkflowtemplateaccounts"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "194",
+			"rule-name": "194",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "wfdworkflowtemplatedocumentset_lov"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "195",
+			"rule-name": "195",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "wfdworkflowtemplatejobpositions"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "196",
+			"rule-name": "196",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "wfdworkflowtemplateprofiles"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "197",
+			"rule-name": "197",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "wfdworkflowtemplatequestionset_lov"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "198",
+			"rule-name": "198",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "wfd_workflowinfo"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "199",
+			"rule-name": "199",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "wfdassets"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "200",
+			"rule-name": "200",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "wfdportalaccesscodes"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "201",
+			"rule-name": "201",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "wfdworkflows"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "202",
+			"rule-name": "202",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "wfdworkflowtemplates"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "203",
+			"rule-name": "203",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "wfdworkflowtemplatesettings"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "selection",
+			"rule-id": "204",
+			"rule-name": "204",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "wfdworkflowtasks"
+			},
+			"rule-action": "include",
+			"filters": []
+		},
+		{
+			"rule-type": "transformation",
+			"rule-id": "205",
+			"rule-name": "205",
+			"rule-target": "column",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "accounts",
+				"column-name": "accountlogo"
+			},
+			"rule-action": "remove-column"
+		},
+		{
+			"rule-type": "transformation",
+			"rule-id": "206",
+			"rule-name": "206",
+			"rule-target": "column",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "adjudicationdispositionhistory",
+				"column-name": "comments"
+			},
+			"rule-action": "remove-column"
+		},
+		{
+			"rule-type": "transformation",
+			"rule-id": "207",
+			"rule-name": "207",
+			"rule-target": "column",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "bgeinvite",
+				"column-name": "binarray"
+			},
+			"rule-action": "remove-column"
+		},
+		{
+			"rule-type": "transformation",
+			"rule-id": "208",
+			"rule-name": "208",
+			"rule-target": "column",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "bgeinvite",
+				"column-name": "serviceproducts"
+			},
+			"rule-action": "remove-column"
+		},
+		{
+			"rule-type": "transformation",
+			"rule-id": "209",
+			"rule-name": "209",
+			"rule-target": "column",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "bgeinvite",
+				"column-name": "alacartesearches"
+			},
+			"rule-action": "remove-column"
+		},
+		{
+			"rule-type": "transformation",
+			"rule-id": "210",
+			"rule-name": "210",
+			"rule-target": "column",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "bgeinvite",
+				"column-name": "panel"
+			},
+			"rule-action": "remove-column"
+		},
+		{
+			"rule-type": "transformation",
+			"rule-id": "211",
+			"rule-name": "211",
+			"rule-target": "column",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "bgeinvite",
+				"column-name": "chainofcustody"
+			},
+			"rule-action": "remove-column"
+		},
+		{
+			"rule-type": "transformation",
+			"rule-id": "212",
+			"rule-name": "212",
+			"rule-target": "column",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "bgeinvite",
+				"column-name": "completedreportemail"
+			},
+			"rule-action": "remove-column"
+		},
+		{
+			"rule-type": "transformation",
+			"rule-id": "213",
+			"rule-name": "213",
+			"rule-target": "column",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "customerfields",
+				"column-name": "fieldtypemetadata"
+			},
+			"rule-action": "remove-column"
+		},
+		{
+			"rule-type": "transformation",
+			"rule-id": "214",
+			"rule-name": "214",
+			"rule-target": "column",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "customers",
+				"column-name": "logo"
+			},
+			"rule-action": "remove-column"
+		},
+		{
+			"rule-type": "transformation",
+			"rule-id": "215",
+			"rule-name": "215",
+			"rule-target": "column",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "bgprofileitem",
+				"column-name": "panel"
+			},
+			"rule-action": "remove-column"
+		},
+		{
+			"rule-type": "transformation",
+			"rule-id": "216",
+			"rule-name": "216",
+			"rule-target": "column",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "bgprofiles",
+				"column-name": "items"
+			},
+			"rule-action": "remove-column"
+		},
+		{
+			"rule-type": "transformation",
+			"rule-id": "217",
+			"rule-name": "217",
+			"rule-target": "column",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "jobpositions",
+				"column-name": "fields"
+			},
+			"rule-action": "remove-column"
+		},
+		{
+			"rule-type": "transformation",
+			"rule-id": "218",
+			"rule-name": "218",
+			"rule-target": "column",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "searchreq",
+				"column-name": "body"
+			},
+			"rule-action": "remove-column"
+		},
+		{
+			"rule-type": "transformation",
+			"rule-id": "219",
+			"rule-name": "219",
+			"rule-target": "column",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "searchreqdraft",
+				"column-name": "body"
+			},
+			"rule-action": "remove-column"
+		},
+		{
+			"rule-type": "transformation",
+			"rule-id": "220",
+			"rule-name": "220",
+			"rule-target": "column",
+			"object-locator": {
+				"schema-name": "dbo",
+				"table-name": "wfdworkflows",
+				"column-name": "endusersavedxml"
+			},
+			"rule-action": "remove-column"
+		}
+	]
+}
